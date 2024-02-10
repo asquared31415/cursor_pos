@@ -1,0 +1,55 @@
+{
+  "name": "cursor-pos",
+  "version": "1.0.0",
+  "publisher": "asquared31415",
+  "author": {
+    "name": "asquared31415"
+  },
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "bugs": {
+    "url": "https://github.com/asquared31415/cursor_pos/issues"
+  },
+  "license": "(MIT OR Apache-2.0)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/asquared31415/cursor_pos"
+  },
+  "displayName": "Cursor Position",
+  "description": "Displays the offset of the cursor from the beginning of the document.",
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "cursor",
+    "position",
+    "offset"
+  ],
+  "extensionKind": [
+    "ui",
+    "workspace"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {},
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "devDependencies": {
+    "@types/vscode": "^1.85.0",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "18.x",
+    "@typescript-eslint/eslint-plugin": "^6.15.0",
+    "@typescript-eslint/parser": "^6.15.0",
+    "eslint": "^8.56.0",
+    "typescript": "^5.3.3",
+    "@vscode/test-cli": "^0.0.4",
+    "@vscode/test-electron": "^2.3.8"
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "lint": "eslint src --ext ts"
+  }
+}
